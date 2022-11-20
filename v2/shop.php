@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS2TP</title>
+    <title>Ctrlr.com</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
     <link rel="stylesheet" href="style.css">
@@ -14,20 +13,20 @@
 
 <body>
 
-<section id="header">
-<a href="index.php"><img src="img/logo.png" class="logo" alt=""></a>
+    <section id="header">
+    <a href="index.php
+        "><img src="img/logo.png" class="logo" alt=""></a>
 
-    <div>
-        <ul id="navbar">
-
-        
-            <li><a class="active" href="index.php">Home</a></li>
-            <li><a href="shop.php">Shop</a></li>
-            <li><a href="blog.php">Blog</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="contact.php">Contact</a></li>
-            
-           <?php 
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.php
+                ">Home</a></li>
+                <li><a href="shop.php">Shop</a></li>
+                <li><a href="blog.php">Blog</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                
+                <?php 
             /* require "config.php"; */
 
             if(isset($_SESSION["id"])) {
@@ -41,59 +40,30 @@
             
             
             <a href="#" id="close"><i class="far fa-times"></i></a>
-        </ul>
-    </div>
-    <div id="mobile">
-        <a href="cart.php
-        "><i class="far fa-shopping-bag"></i></a>
-        <i id="bar" class="fas fa-outdent"></i>
-    </div>
-</section>
-
-    <section id="hero">
-        <h4>Welcome to <b><h3>Ctrlr.com</h3></b> </h4>
-        <h2>Winter Exclusive deals</h2>
-        <h1>On all products</h1>
-        <p>Up to 40% off selected controllers + Free shipping</p>
-        <button>Shop Now</button>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.php
+            "><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
     </section>
 
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="img/features/f1.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f2.png" alt="">
-            <h6>Online Order</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f3.png" alt="">
-            <h6>Save Money</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f4.png" alt="">
-            <h6>Promotions</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f5.png" alt="">
-            <h6>Sell your old controller</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f6.png" alt="">
-            <h6>F24/7 Support</h6>
-        </div>
+    <section id="page-header">
+
+        <h2>#stayhome</h2>
+
+        <p>Save more with coupons & up to 70% off!</p>
+
     </section>
 
     <section id="product1" class="section-p1">
-        <h2>Featured Products</h2>
-        <p>Welcome to Tech Heaven</p>
         <div class="pro-container">
-            <div class="pro">
+            <div class="pro" onclick="window.location.href='sproduct.html';">
                 <img src="img/products/f1.jpg" alt="">
                 <div class="des">
                     <span>Android</span>
-                    <h4>Razer Kishi for Android</h4>
+                    <h5>Razer Kishi for Android</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -101,7 +71,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£79 </h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
@@ -117,7 +87,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£299</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
@@ -133,7 +103,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£99</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
@@ -149,7 +119,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£199</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
@@ -165,7 +135,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£329</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
@@ -181,7 +151,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£99</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
@@ -197,7 +167,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£59</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
@@ -213,23 +183,11 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£99</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
-        </div>
-    </section>
 
-    <section id="banner" class="section-m1">
-        <h4><u>WHY CTRLR.COM ?</u></h4>
-        <h2>Up to <span>40% Off</span> – All Controllers & Joystick</h2>
-        <button class="normal">Explore More</button>
-    </section>
-
-    <section id="product1" class="section-p1">
-        <h2>New Arrivals</h2>
-        <p>Exclusive Custom Designs</p>
-        <div class="pro-container">
             <div class="pro">
                 <img src="img/products/n1.jpg" alt="">
                 <div class="des">
@@ -242,7 +200,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£99</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
@@ -258,7 +216,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£79</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
@@ -274,7 +232,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£59</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
@@ -282,7 +240,7 @@
                 <img src="img/products/n4.jpg" alt="">
                 <div class="des">
                     <span>PS5</span>
-                    <h5>Red Street Camo - PS5 Controller</h5>
+                    <h5>Red Camo- Special Edition</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -290,15 +248,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£99</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
                 <img src="img/products/n5.jpg" alt="">
                 <div class="des">
-                    <span>PS4</span>
-                    <h5>Yellow pulse DR.AimKing edition - PS4 Controller</h5>
+                    <span>PS5</span>
+                    <h5>Yellow skin- customised</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -306,15 +264,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£69</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
                 <img src="img/products/n6.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Moza racingsim FSR Steering wheel</h5>
+                    <span>IDK</span>
+                    <h5>Special edition</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -322,7 +280,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£580</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
@@ -330,7 +288,7 @@
                 <img src="img/products/n7.jpg" alt="">
                 <div class="des">
                     <span>XBOX</span>
-                    <h5>Ice and Fire Controller - Series S / X</h5>
+                    <h5>Special edition</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -338,15 +296,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£59</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
                 <img src="img/products/n8.jpg" alt="">
                 <div class="des">
-                    <span>PS5</span>
-                    <h5>AimControllers RL9 Black / Red - Playstation</h5>
+                    <span>XBOX</span>
+                    <h5>special edition </h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -354,41 +312,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>£219</h4>
+                    <h4>$78</h4>
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         </div>
     </section>
 
-    <section id="sm-banner" class="section-p1">
-        <div class="banner-box">
-            <h4>crazy deals</h4>
-            <h2>Free Shipping</h2>
-            <span>All orders over £79 will include free next day shipping</span>
-            <button class="white">Learn More</button>
-        </div>
-        <div class="banner-box banner-box2">
-            <h4>Winter</h4>
-            <h2>upcoming season</h2>
-            <span>The best controller sale is on CTRLR.com</span>
-            <button class="white">Collection</button>
-        </div>
-    </section>
-
-    <section id="banner3">
-        <div class="banner-box">
-            <h2>SEASONAL SALE</h2>
-            <h3>Winter Collection -50% OFF</h3>
-        </div>
-        <div class="banner-box banner-box2">
-            <h2>NEW SKINS COLLECTION </h2>
-           
-        </div>
-        <div class="banner-box banner-box3">
-            <h2>CUSTOM CONTROLLERS</h2>
-            <h3>Built for true performance</h3>
-        </div>
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
     </section>
 
     <section id="newsletter" class="section-p1 section-m1">
@@ -457,5 +391,4 @@
     <script src="script.js"></script>
 </body>
 
-</php
->
+</html>
