@@ -9,7 +9,7 @@ if (isset($_POST['email'])) {
     $password = $_POST['password'];
     
 
-    $result = mysqli_query($conn, "SELECT * from CTRLR WHERE user_email = '$email'");
+    $result = mysqli_query($conn, "SELECT * from users WHERE user_email = '$email'");
     $row = mysqli_fetch_assoc ($result);
 
     if(mysqli_num_rows($result) > 0) {
