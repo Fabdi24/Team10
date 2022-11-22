@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2TP</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <div class="dropdown">
+            <button class="dropbutton">Mode</button>
+            <div class="dropdownMenu">
+                <button onclick="darkMode()">Darkmode</button>
+                <button onclick="lightMode()">LightMode</button>
+            </div>
+          </div>
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="customer.html">Customer</a></li>
+                <li><a href="order.html">Orders</a></li>
+                <li><a href="items.html">Products</a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+    <div class="containerProduct">
+    <div class="pForm">
+        <form action="" method="post" enctype="multipart/form-data">
+        <h2>Register</h2>
+    <div class="form-group3">
+        <label for="customername">First Name</label>
+            <input type="text" name="name" id="name" class="registerInput" required>
+    </div>
+
+    <div class="form-group3">
+            <label for="customersurname">Surname</label>
+                <input type="text" name="customersurname" id="customersurname" class="registerInput" required>
+    </div>
+
+    <div class="form-group3">
+            <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="registerInput" required>
+    </div>
+
+    <div class="form-group3">
+        <label for="password1">Password</label>
+            <input type="password" name="password" id="password" class="registerInput" required>
+        </div>
+
+<div class="form-group3">
+    <label for="password2">Re-enter Password</label>
+        <input type="password" name="password2" id="password2" class="registerInput" required>
+</div>
+
+<p>By creating an account you agree to our <a href="">Terms & Conditions</a></p>
+
+<input type="submit" class="buttonregister" name="add-product" value="Register">
+<a href="" class="btn">Return</a>
+</form>
+    </div>
+</div>
+<section id="adminFooter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Ctrlr.com</h4>
+    </div>
+</section>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
