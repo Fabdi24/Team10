@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+	<!--The links above are used to provide icons-->
 
 <body>
 
@@ -25,6 +26,8 @@
                 <li><a href="order.php">Order</a></li>
                 <li><a href="items.php">Products</a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
+                <!--The links allows you to access each tab-->
+
                 <div class="dropdown">
                     <button class="dropbutton">Mode</button>
                     <div class="dropdownMenu">
@@ -33,6 +36,8 @@
                     </div>
                   </div>
                   </div>
+
+                  <!--Accessibility meaning it can allow you to change to darkmode-->
 
             </ul>
         </div>
@@ -132,28 +137,28 @@
                     </tr>
                     <tr>
                         <td>Controllers</td>
-                        <td>85631</td>
+                        <td>87861</td>
+                        <td>Refunded</td>
+                        <td class="danger">Declined</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Controllers</td>
+                        <td>89841</td>
                         <td>Due</td>
                         <td class="warning">Pending</td>
                         <td class="primary">Details</td>
                     </tr>
                     <tr>
                         <td>Controllers</td>
-                        <td>85631</td>
-                        <td>Due</td>
-                        <td class="warning">Pending</td>
+                        <td>83261</td>
+                        <td>Paid</td>
+                        <td class="primary">Delivered</td>
                         <td class="primary">Details</td>
                     </tr>
                     <tr>
                         <td>Controllers</td>
-                        <td>85631</td>
-                        <td>Due</td>
-                        <td class="warning">Pending</td>
-                        <td class="primary">Details</td>
-                    </tr>
-                    <tr>
-                        <td>Controllers</td>
-                        <td>85631</td>
+                        <td>84621</td>
                         <td>Due</td>
                         <td class="warning">Pending</td>
                         <td class="primary">Details</td>
@@ -167,15 +172,6 @@
     </main>
     <!--------------------------END OF MAIN-------------------------->
 
-   
-        <!------------------END OF TOP------------------>
-        
-    
-
-    
-
-    
-
     <section id="adminFooter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>CTRLR.com</h4>
@@ -183,10 +179,13 @@
         </div>
         
     </section>
+    <!--------------------------End of Footer------------------------>
 
     
 
     <script src="script.js"></script>
 </body>
+<!--------------------------Linking the javascript sheet to the HTML------------------------> 
 
 </php>
+<!---------The code above closes the php------>
