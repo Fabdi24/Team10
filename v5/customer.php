@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+<!--The links above are used to provide icons-->
 
 <body>
 
@@ -24,6 +25,8 @@
                 <li><a href="order.php">Orders</a></li>
                 <li><a href="items.php">Products</a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
+                <!--The links allows you to access each tab-->
+
                 <div class="dropdown">
                     <button class="dropbutton">Mode</button>
                     <div class="dropdownMenu">
@@ -31,6 +34,7 @@
                         <button onclick="lightMode()">LightMode</button>
                     </div>
                   </div>
+                  <!--Accessibility meaning it can allow you to change to darkmode-->
             </ul>
         </div>
         <div id="mobile">
@@ -72,6 +76,8 @@
                         <th> Address </th>
                         
                     </t>";
+
+                    /* The code above shows the whats going to be inputed in the table*/ 
                     
                         if (isset($_POST['search'])){
                             $name = $_POST['search'];
@@ -121,8 +127,11 @@
         <h4>Ctrlr.com</h4>
     </div>
 </section>
+<!--------------------------End of Footer------------------------> 
 
     <script src="script.js"></script>
+    <!--------------------------Linking the javascript sheet to the HTML------------------------> 
+
 </body>
 
 
