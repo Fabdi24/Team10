@@ -134,17 +134,17 @@
 
         <div class="col">
             <h4>About</h4>
-            <a href="#">About Us</a>
+            <a href="about.php">About Us</a>
             <a href="#">Delivery Information</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
+            <a href="contact.php">Contact Us</a>
         </div>
 
         <div class="col">
             <h4>My Account</h4>
-            <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
+            <a href="login.php">Sign In</a>
+            <a href="cart.php">View Cart</a>
             <a href="#">My Wishlist</a>
             <a href="#">Track My Order</a>
             <a href="#">Help</a>
