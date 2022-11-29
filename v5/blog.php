@@ -42,11 +42,102 @@
     </section>
 
     <section id="pagination" class="section-p1">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+        <button id="form-button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        <button id="form-button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign up</button>
+        <button id="form-button" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Administrator Login</button>
+       
     </section>
 
+    
+<section>
+<div id="id01" class="modal">
+  
+    <form class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+  <span></span>
+  <div id="id02" class="modal">
+  
+    <form class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+  
+      <div class="container">
+        <label for="email"><b>Email address</b></label>
+        <input type="text" placeholder="Enter email address" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+  
+        <label for="con-psw"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" name="con-psw" required>
+
+        <label for="fname"><b>First name</b></label>
+        <input type="text" placeholder="Enter First name" name="fname" required>
+
+        <label for="mname"><b>Middle name</b></label>
+        <input type="text" placeholder="Enter Middle name" name="mname" required>
+         
+        <label for="lname"><b>Last name</b></label>
+        <input type="text" placeholder="Enter Last name" name="lname" required>
+        
+        <label for="address"><b>Address</b></label>
+        <input type="text" placeholder="Enter Address" name="lname" required>
+          
+          
+        <button type="submit">Sign up</button>
+     
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+  <span></span>
+  <div id="id03" class="modal">
+  
+    <form class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+  
+      <div class="container" class="light-mode">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+      </section>
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Sign Up For Newsletters</h4>
