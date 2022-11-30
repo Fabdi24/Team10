@@ -43,7 +43,9 @@
 
     include "connect.php";
     require "config.php";
-        
+        if (isset($_GET['id'])) {
+            $delete=mysqli_query($connection, "DELETE FROM `` WHERE `id` = '$id'")
+        }
         
             $sql = ("SELECT id, name, description, colour, quantity, price FROM products");
             $result = mysqli_query($conn, $sql);
@@ -105,7 +107,10 @@
                             <td>{$rows['description']} </td>
                             <td>{$rows['colour']} </td>
                             <td>{$rows['quantity']} </td>
-                            <td>{$rows['price']} </td>";
+                            <td>{$rows['price']} </td>
+                            <td>
+                                <a href='admin.php?' class='btn50' >Delete</a>
+                            </td>";
                             
                         }
                             

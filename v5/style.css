@@ -1497,10 +1497,6 @@ th{
     opacity: 0.9;
   }
 
-  .registerInput{
-    
-  }
-
   /*----------ROOT VARIABLES----------- */
 :root{
     --color-primary: #7380ec;
@@ -1916,4 +1912,17 @@ width: 100%;
     padding: 1px;
 
 
+}
+
+.btn50 {
+    background:#00226d;
+    color: white;
+    font-size: 1.5em;
+    padding: 6px 30px;
+    text-decoration: none;
+}
+
+.btn50:hover{
+    background: white;
+    color: #00226d;
 }
