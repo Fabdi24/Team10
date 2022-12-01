@@ -2,6 +2,13 @@
 
 require_once "config.php";
 
+if (!(isset($_SESSION["user_id"]))) {
+    header("Location:register.php");
+}
+
+
+
+
 $sql_cart = "SELECT * FROM cart";
 $all_cart = $conn->query($sql_cart);
 
@@ -62,7 +69,7 @@ $all_cart = $conn->query($sql_cart);
         
         while($row_cart = mysqli_fetch_assoc($all_cart)){
             $sql = "SELECT * FROM products WHERE id =".$row_cart["product_id"];
-            $total_products = $conn->query("$sql");
+            $total_products = $conn->query($sql);
             while($row = mysqli_fetch_assoc($total_products)){
     
         ?>
@@ -95,7 +102,7 @@ $all_cart = $conn->query($sql_cart);
             $result3 = mysqli_query($conn, $insert);
             ?>
         </div>
-        <button class="remove" data-id="<?php echo $row["id"]; ?>">Remove from Cart</button>
+        <button class="remove" data-id="<?php echo $row['id']; ?>">Remove from Cart</button>
 </div>    
 
         <?php
@@ -112,18 +119,14 @@ $all_cart = $conn->query($sql_cart);
                 var cart_id = target.getAttribute("data-id");
                 
                 var xml = new XMLHttpRequest();
-                xml.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-
-                    }
-                }
+               
 
                 xml.open("GET","config.php?cart_id="+cart_id,true);
                 xml.send();
 
             })
         }
-    header(Location: "cart.php");
+    
 
 
     </script>
@@ -133,44 +136,49 @@ $all_cart = $conn->query($sql_cart);
     
     if (isset($_POST['Submit'])) {
 
-    $cart = "SELECT * from cart";
-    echo "$cart";
+    
     $id = $_SESSION["user_id"];
 
-    $sql = "INSERT INTO orders (user_id, user_orders)
-    VALUES (`$id`, `$cart`)";
+    while($row_cart = mysqli_fetch_assoc($all_cart)){
+    $sql = "SELECT * FROM products WHERE id =".$row_cart["product_id"];
+    $total_products = $conn->query($sql);
+    
+    while($row = mysqli_fetch_assoc($total_products)){
 
-    $result = mysqli_query($conn, $sql);
+    $name = $row["name"];
+    $image = $row["image"];
+    $price = $row["price"];
+    $description = $row["description"];
 
-    if ($result) {
+    $colour = $row["colour"];
+    $product_id = $row["id"];
+
+
+    $insert_order = "INSERT INTO orders (user_id, user_id, product_id, product_name, product_description, product_colour, product_price, product_image)
+    VALUES ('$id', '$product_id', '$name', '$description', '$colour', '$price', '$image')";
+
+    $result_order = mysqli_query($conn, $insert_order);
+    }
+
+    if ($result_order) {
         echo("Success");
-    } else {
-        $sql = "UPDATE user SET orders = $cart WHERE user_id = $id";
-        $result2 = mysqli_query($conn, $sql);
-        if ($result2) {
-            echo("Success");
-    }
-}
-    }
-?>
-    <button class="normal" name="Submit" onclick = checkoutfunction() >Checkout</button>
-   
-
-    <script>
-        var checkout = document.getElementsByClassName("normal");
         
-            checkout.addEventListener("click",() => {
-                
-              
-               <?php
                 $query = "TRUNCATE TABLE cart";
                 mysqli_multi_query($conn, $query);
-                header('Location : myAccount.php');
-                ?>
-                alert("You have Checked out successfully!");
                 
+                
+    } else {
+        echo("Error");
+    }
+}
 
-            }, {once : true });
+    }
+?>
+    <form action="cart.php" method="post">
+        <button class="normal" type="submit" name="Submit" >Checkout</button>
+    </form>
+
+    <script> 
         
 
 
