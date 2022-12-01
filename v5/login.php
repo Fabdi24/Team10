@@ -14,7 +14,7 @@
 <body>
 <div id="id01" class="modal">
   
-  <form class="modal-content" action="/login.php" method="post">
+  <form class="modal-content animate" action="/login.php" method="post">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     </div>
 
