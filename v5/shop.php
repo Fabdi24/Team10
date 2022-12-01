@@ -55,7 +55,6 @@
         <div class="image">
             <img <?php echo $row["image"]; ?>  alt="">
         </div>
-
             <div class ="caption">
                 <h5 class="product_name"> <?php echo $row["name"]?></h5>
                     <div class="star">
@@ -67,8 +66,6 @@
                     </div>
                 <h4 class="price">£<?php echo $row["price"]?></h4>
             </div>
-
-        <div>
         <button class="add" data-id="<?php echo $row["id"];  ?>">Add to cart</button> 
         </div>
     </div>
