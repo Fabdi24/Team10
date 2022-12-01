@@ -45,52 +45,13 @@
         <img src="img/about/a6.jpg" alt="">
         <div>
             <h2>Who We Are?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis auteirure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Hello Dear user, We are Ctrlr! A company that appeals to everyone that requires gaming controllers. Our philosophy is to provide an affordable range of beautiful products that tends to all of our customers needs. </p>
 
 
             <br><br>
 
         </div>
     </section>
-
-    <section id="about-app" class="section-p1">
-        <h1>Download Our <a href="#">App</a> </h1>
-        
-    </section>
-
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="img/features/f1.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f2.png" alt="">
-            <h6>Online Order</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f3.png" alt="">
-            <h6>Save Money</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f4.png" alt="">
-            <h6>Promotions</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f5.png" alt="">
-            <h6>Sell your old Controllers</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f6.png" alt="">
-            <h6>F24/7 Support</h6>
-        </div>
-    </section>
-
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign Up For Newsletters</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers.</span> </p>
-        </div>
         <div class="form">
             <input type="text" placeholder="Your email address">
             <button class="normal">Sign Up</button>
@@ -126,17 +87,6 @@
             <h4>My Account</h4>
             <a href="login.php">Sign In</a>
             <a href="cart.php">View Cart</a>
-        </div>
-
-        <div class="col install">
-            <h4>Install App</h4>
-            <p>From App Store or Google Play</p>
-            <div class="row">
-                <img src="img/pay/app.jpg" alt="">
-                <img src="img/pay/play.jpg" alt="">
-            </div>
-            <p>Secured Payment Gateways </p>
-            <img src="img/pay/pay.png" alt="">
         </div>
 
         
