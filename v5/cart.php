@@ -181,7 +181,7 @@ $all_cart = $conn->query($sql_cart);
 
     </script>
 
-    <input type="button" onclick="checkoutfunction()" value="Call function">
+    <input type="button" onclick="checkoutfunction()">
     
     
 </body>
