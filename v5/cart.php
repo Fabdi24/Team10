@@ -181,12 +181,13 @@ $all_cart = $conn->query($sql_cart);
 
     </script>
 
-    <button onclick= "checkoutfunction()"> Checkout</button>
+    <input type="button" name="Checkout" onclick="checkoutfunction()">
     
     
 </body>
 
 </html>
+<script type="text/javascript">
  function checkoutfunction() {
     <?php  
         echo '<script type="text/javascript">';
@@ -200,3 +201,4 @@ $all_cart = $conn->query($sql_cart);
     header("location : login.php");
 
     }
+</script>
