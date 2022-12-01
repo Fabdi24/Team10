@@ -57,6 +57,13 @@
         </div>
         <div class ="caption">
         <p class="product_name" style="font-size: 15px"> <?php echo $row["name"]?></p>
+        <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
         <p class="price">£<?php echo $row["price"]?></p> 
         </div>
         <button class="add" data-id="<?php echo $row["id"];  ?>">Add to cart</button>
