@@ -45,7 +45,7 @@
     require "config.php";
         
         
-            $sql = ("SELECT user_id, user_firstname, user_lastname, user_orders FROM user");
+            $sql = ("SELECT user_id, product_id, product_name, product_colour, product_price FROM orders");
             $result = mysqli_query($conn, $sql);
         echo"
         <div style='margin-left:10%; margin-right:5%;  min-width:80vw; min-height: 20vw;'>
@@ -55,52 +55,30 @@
                     <tr>
                         <th colspan ='3'><h1> Orders </h1></th>
                         <th colspan ='3'>
-                        
-                        <form class='search', method='post' ,  autocomplete='off'>
-                            <input type='text' name='search' required/>
-                            <button type='searchSubmit'> Search </button>
-
-                        </form>
-                        
-                        
+                         
                         </th>
                     </tr>
                     <t>
-                        <th> ID </th>
-                        <th> First Name </th>
-                        <th> Last Name </th>
-                        <th> Orders </th>
+                        <th>User ID</th>
+                        <th> Product ID </th>
+                        <th> Product  Name </th>
+                        <th> Product Colour </th>
+                        <th> Product Price </th>
                         
                         
                     </t>";
-                    
-                        if (isset($_POST['search'])){
-                            $name = $_POST['search'];
-                            $sql = ("SELECT user_id, user_firstname, user_lastname, user_orders FROM user where user_firstname = '$name' or user_lastname = '$name'");
-                            $result = mysqli_query($conn, $sql);
-                            while($rows=mysqli_fetch_assoc($result)) {
-                                echo "
-                            <tr style='text-align: center;'>
-                            <td>{$rows['user_id']} </td>
-                            <td>{$rows['user_firstname']} </td>
-                            <td>{$rows['user_lastname']} </td>
-                            <td>{$rows['user_orders']} </td>";
-                           
-                            
-                        
-                            }
-                        }
-
                     
                         while($rows=mysqli_fetch_assoc($result)) 
                         {
                             echo "
                         <tr style='text-align: center;'>
                             
-                            <td>{$rows['user_id']} </td>
-                            <td>{$rows['user_firstname']} </td>
-                            <td>{$rows['user_lastname']} </td>
-                            <td>{$rows['user_orders']} </td>";
+                        <td>{$rows['user_id']} </td>
+                        <td>{$rows['product_id']} </td>
+                        <td>{$rows['product_name']} </td>
+                        <td>{$rows['product_colour']} </td>
+                        <td>{$rows['product_price']} </td>";
+                       
                             
                         }
                             

@@ -43,9 +43,7 @@
 
     include "connect.php";
     require "config.php";
-        if (isset($_GET['id'])) {
-            $delete=mysqli_query($connection, "DELETE FROM `` WHERE `id` = '$id'")
-        }
+        
         
             $sql = ("SELECT id, name, description, colour, quantity, price FROM products");
             $result = mysqli_query($conn, $sql);
@@ -55,8 +53,8 @@
             <div class ='scroll-object'>
                 <table align ='center' border='10px' style='width:100%; min-width:800px; line-height:100px; background:grey'>
                     <tr>
-                        <th colspan ='6'><h1> Products </h1></th>
-                        <th colspan ='6'>
+                        <th colspan ='4'><h1> Products </h1></th>
+                        <th colspan ='4'>
                         
                         <form class='search', method='post' ,  autocomplete='off'>
                             <input type='text' name='search' required/>
@@ -107,10 +105,7 @@
                             <td>{$rows['description']} </td>
                             <td>{$rows['colour']} </td>
                             <td>{$rows['quantity']} </td>
-                            <td>{$rows['price']} </td>
-                            <td>
-                                <a href='admin.php?' class='btn50' >Delete</a>
-                            </td>";
+                            <td>{$rows['price']} </td>";
                             
                         }
                             
