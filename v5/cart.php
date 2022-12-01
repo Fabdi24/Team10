@@ -153,7 +153,7 @@ $all_cart = $conn->query($sql_cart);
 }
     }
 ?>
-    <button class="normal" name="Submit">Checkout</button>
+    <button class="normal" name="Submit" onclick = checkoutfunction() >Checkout</button>
    
 
     <script>
@@ -180,8 +180,6 @@ $all_cart = $conn->query($sql_cart);
 
 
     </script>
-
-    <input type="button" name="Checkout" onclick="checkoutfunction()">
     
     
 </body>
