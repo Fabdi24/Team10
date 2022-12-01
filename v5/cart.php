@@ -123,7 +123,7 @@ $all_cart = $conn->query($sql_cart);
 
             })
         }
-    header(Location: "cart2.php");
+    header(Location: "cart.php");
 
 
     </script>
@@ -158,25 +158,20 @@ $all_cart = $conn->query($sql_cart);
 
     <script>
         var checkout = document.getElementsByClassName("normal");
-        for (var i = 0; i<remove.length; i++) {
-            remove[i].addEventListener("click", function(event) {
-                var target = event.target;
-                var cart_id = target.getAttribute("data-id");
+        
+            checkout.addEventListener("click", function(event) {
                 
-                var xml = new XMLHttpRequest();
-                xml.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        
-                    }
-                }
-
-
-                xml.open("GET","config.php?cart_id="+cart_id,true);
-                xml.send();
+              
+               <?php
+                $query = "TRUNCATE TABLE cart";
+                mysqli_multi_query($conn, $query);
+                header(Location : "cart.php");
+                ?>
+                alert("You have Checked out successfully!");
                 
 
             })
-        }
+        
 
 
     </script>
@@ -185,18 +180,3 @@ $all_cart = $conn->query($sql_cart);
 </body>
 
 </html>
-<script type="text/javascript">
- function checkoutfunction() {
-    <?php  
-        echo '<script type="text/javascript">';
-        echo ' alert("You have Checked out successfully!")';  //not showing an alert box.
-        echo '</script>';
-    
-        $q = "TRUNCATE cart";
-        mysqli_multi_query($connection, $query);
-    ?>
-    sleep(3);
-    header("location : login.php");
-
-    }
-</script>
