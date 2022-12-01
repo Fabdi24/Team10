@@ -145,7 +145,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     padding: 0 80px;
-    background-image: url("img/pexels-photo-main.jpeg");
+    background-image: url("img/hero4.png");
     width: 100%;
     height: 90vh;
     background-size: cover;
@@ -654,17 +654,17 @@ footer a:hover {
 }
 
 
-/* account Page */
+/* Blog Page */
 
-#account {
+#blog {
     padding: 150px 150px 0 150px;
 }
 
-#page-header.account-header {
+#page-header.blog-header {
     background-image: url("img/banner/b19.jpg");
 }
 
-#account .account-box {
+#blog .blog-box {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -673,22 +673,22 @@ footer a:hover {
     padding-bottom: 90px;
 }
 
-#account .account-img {
+#blog .blog-img {
     width: 50%;
     margin-right: 40px;
 }
 
-#account img {
+#blog img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-#account .account-details {
+#blog .blog-details {
     width: 50%;
 }
 
-#account .account-details a {
+#blog .blog-details a {
     text-decoration: none;
     font-size: 11px;
     color: #000;
@@ -697,7 +697,7 @@ footer a:hover {
     transition: 0.3s;
 }
 
-#account .account-details a::after {
+#blog .blog-details a::after {
     content: "";
     width: 50px;
     height: 1px;
@@ -707,15 +707,15 @@ footer a:hover {
     position: absolute;
 }
 
-#account .account-details a:hover {
+#blog .blog-details a:hover {
     color: #088178;
 }
 
-#account .account-details a:hover::after {
+#blog .blog-details a:hover::after {
     background-color: #088178;
 }
 
-#account .account-box h1 {
+#blog .blog-box h1 {
     position: absolute;
     font-weight: 700;
     font-size: 70px;
@@ -1147,19 +1147,19 @@ footer a:hover {
         text-align: start;
     }
     /* Login Page */
-    #account {
+    #blog {
         padding: 100px 20px 20px 20px;
     }
-    #account .account-box {
+    #blog .blog-box {
         flex-direction: column;
         align-items: flex-start;
     }
-    #account .account-img {
+    #blog .blog-img {
         width: 100%;
         margin-right: 0px;
         margin-bottom: 30px;
     }
-    #account .account-details {
+    #blog .blog-details {
         width: 100%;
     }
     #about-app .video {
@@ -1495,6 +1495,10 @@ th{
     width: 100%;
     height: 30px;
     opacity: 0.9;
+  }
+
+  .registerInput{
+    
   }
 
   /*----------ROOT VARIABLES----------- */
@@ -1914,15 +1918,56 @@ width: 100%;
 
 }
 
-.btn50 {
-    background:#00226d;
-    color: white;
-    font-size: 1.5em;
-    padding: 6px 30px;
-    text-decoration: none;
+main{
+    max-width: 1500px;
+    width:95%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:auto;
 }
 
-.btn50:hover{
-    background: white;
-    color: #00226d;
+main .card{
+    max-width: 300px;
+    flex: 1 1 210px;
+    text-align: center;
+    height: 350px;
+    border: 1px solid grey;
+    margin:20px;
+}
+
+main .card .image{
+    height:50%;
+    margin-bottom: 20px;
+}
+
+main .card .image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+main .card .caption{
+    padding-left: 1em;
+    text-align: left;
+    line-height: 3em;
+    height: 25%;
+}
+
+main .card .caption p{
+    font-size: 1.5rem;
+
+}
+
+
+
+main .card button{
+    border: 2px solid black;
+    padding: 1em;
+    width: 80%;
+    cursor: pointer;
+    margin-top: 2em;
+    font-weight: bold;
+    position: relative;
 }
