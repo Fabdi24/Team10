@@ -654,17 +654,17 @@ footer a:hover {
 }
 
 
-/* Blog Page */
+/* account Page */
 
-#blog {
+#account {
     padding: 150px 150px 0 150px;
 }
 
-#page-header.blog-header {
+#page-header.account-header {
     background-image: url("img/banner/b19.jpg");
 }
 
-#blog .blog-box {
+#account .account-box {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -673,22 +673,22 @@ footer a:hover {
     padding-bottom: 90px;
 }
 
-#blog .blog-img {
+#account .account-img {
     width: 50%;
     margin-right: 40px;
 }
 
-#blog img {
+#account img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-#blog .blog-details {
+#account .account-details {
     width: 50%;
 }
 
-#blog .blog-details a {
+#account .account-details a {
     text-decoration: none;
     font-size: 11px;
     color: #000;
@@ -697,7 +697,7 @@ footer a:hover {
     transition: 0.3s;
 }
 
-#blog .blog-details a::after {
+#account .account-details a::after {
     content: "";
     width: 50px;
     height: 1px;
@@ -707,15 +707,15 @@ footer a:hover {
     position: absolute;
 }
 
-#blog .blog-details a:hover {
+#account .account-details a:hover {
     color: #088178;
 }
 
-#blog .blog-details a:hover::after {
+#account .account-details a:hover::after {
     background-color: #088178;
 }
 
-#blog .blog-box h1 {
+#account .account-box h1 {
     position: absolute;
     font-weight: 700;
     font-size: 70px;
@@ -1147,19 +1147,19 @@ footer a:hover {
         text-align: start;
     }
     /* Login Page */
-    #blog {
+    #account {
         padding: 100px 20px 20px 20px;
     }
-    #blog .blog-box {
+    #account .account-box {
         flex-direction: column;
         align-items: flex-start;
     }
-    #blog .blog-img {
+    #account .account-img {
         width: 100%;
         margin-right: 0px;
         margin-bottom: 30px;
     }
-    #blog .blog-details {
+    #account .account-details {
         width: 100%;
     }
     #about-app .video {
