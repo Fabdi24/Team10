@@ -159,11 +159,12 @@
             <div class="follow">
                 <h4>Follow Us</h4>
                 <div class="icon">
+                     <i class="fab fa-youtube"></i>
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-instagram"></i>
                     <i class="fab fa-pinterest-p"></i>
-                    <i class="fab fa-youtube"></i>
+                    
                 </div>
             </div>
         </div>
