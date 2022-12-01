@@ -152,12 +152,12 @@
         </div>
     </section>
 
-    <footer class="section-p1">
+   <footer class="section-p1">
         <div class="col">
             <img class="logo" src="img/logo.png" alt="">
             <h4>Contact</h4>
-            <p><strong>Address: </strong> 562 Wellington Road, Street 32, San Francisco</p>
-            <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+            <p><strong>Address: </strong> Aston University, Birmingham</p>
+            <p><strong>Phone:</strong> +44 1234567890</p>
             <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
             <div class="follow">
                 <h4>Follow Us</h4>
@@ -178,7 +178,7 @@
         </div>
 
         <div class="col">
-            <h4>My account</h4>
+            <h4>My Account</h4>
             <a href="login.php">Sign In</a>
             <a href="cart.php">View Cart</a>
         </div>
