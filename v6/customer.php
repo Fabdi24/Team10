@@ -19,7 +19,7 @@
         <div>
             <ul id="navbar">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="admin.php">Dashboard</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
                 <li><a class="active" href="customer.php">Customer</a></li>
                 <li><a href="order.php">Orders</a></li>
                 <li><a href="items.php">Products</a></li>
