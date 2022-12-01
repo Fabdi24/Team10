@@ -64,5 +64,18 @@ ALTER TABLE `user`
   MODIFY `user_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
+CREATE TABLE `cart` (
+  `product_id` varchar(255)
+)
+
+CREATE TABLE orders (
+  `user_id` int(10),
+  `product_id` int(10),
+  `product_name` varchar(500),
+  `product_description` varchar(500),
+  `product_colour` varchar(500),
+  `product_price` varchar(500),
+  `product_image` varchar(500),
+)
 
 
