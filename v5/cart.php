@@ -159,7 +159,7 @@ $all_cart = $conn->query($sql_cart);
     <script>
         var checkout = document.getElementsByClassName("normal");
         
-            checkout.addEventListener("click", function(event) {
+            checkout.addEventListener("click",() => {
                 
               
                <?php
@@ -170,7 +170,7 @@ $all_cart = $conn->query($sql_cart);
                 alert("You have Checked out successfully!");
                 
 
-            });
+            }, {once : true });
         
 
 
