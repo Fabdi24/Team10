@@ -228,18 +228,18 @@ body {
     background-color: #fff2e5;
 }
 
-#product1 {
+#card {
     text-align: center;
 }
 
-#product1 .pro-container {
+#card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 20px;
 }
 
-#product1 .pro {
+#caption {
     width: 23%;
     min-width: 250px;
     padding: 10px 12px;
@@ -252,49 +252,49 @@ body {
     margin: 15px 0;
 }
 
-#product1 .pro:hover {
+#card:hover {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
 
-#product1 .pro img {
+#card .image img {
     width: 100%;
     border-radius: 20px;
 }
 
-#product1 .pro .des {
+#card .caption .des {
     text-align: start;
     padding: 10px 0;
 }
 
-#product1 .pro .des span {
+#card .caption .des span {
     color: #606063;
     font-size: 12px;
 }
 
-#product1 .pro .des h5 {
+#card .caption .des h5 {
     padding-top: 7px;
     color: #1a1a1a;
     font-size: 14px;
     transition: 0.2s;
 }
 
-#product1 .pro:hover .des h5 {
+#product1 .caption:hover .des h5 {
     color: #088178;
 }
 
-#product1 .pro .des i {
+#product1 .caption .des i {
     color: rgb(240, 177, 18);
     font-size: 12px;
 }
 
-#product1 .pro .des h4 {
+#product1 .caption .des h4 {
     padding-top: 7px;
     font-size: 15px;
     font-weight: 700;
     color: #088178;
 }
 
-#product1 .pro .cart {
+#product1 .caption .cart {
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -309,7 +309,7 @@ body {
     right: 10px;
 }
 
-#product1 .pro .cart:hover {
+#product1 .caption .cart:hover {
     color: #fff;
     background: #088178;
     font-weight: 400;
@@ -1926,12 +1926,16 @@ main{
 }
 
 main .card{
-    max-width: 300px;
-    flex: 1 1 210px;
-    text-align: center;
-    height: 350px;
-    border: 1px solid grey;
-    margin:20px;
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    transition: .2s;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
 }
 
 main .card .image{
