@@ -55,18 +55,18 @@
         <div class="image">
             <img <?php echo $row["image"]; ?>  alt="">
         </div>
-        <div class ="caption">
-        <p class="product_name" style="font-size: 15px"> <?php echo $row["name"]?></p>
-        <div class="star">
+            <div class ="caption">
+                <h5 class="product_name"> <?php echo $row["name"]?></h5>
+                    <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-        <p class="price">£<?php echo $row["price"]?></p> 
-        </div>
-        <button class="add" data-id="<?php echo $row["id"];  ?>">Add to cart</button>
+                <h4 class="price">£<?php echo $row["price"]?></h4>
+            </div>
+        <button class="add" data-id="<?php echo $row["id"];  ?>">Add to cart</button> 
         </div>
     </div>
 
