@@ -20,7 +20,7 @@
         <div>
             <ul id="navbar">
                 <li><a href="index.php">Home</a></li>
-                <li><a class="active" href="admin.php">Dashboard</a></li>
+                <li><a class="active" href="dashboard.php">Dashboard</a></li>
                 <li><a href="customer.php">Customer</a></li>
                 <li><a href="order.php">Order</a></li>
                 <li><a href="items.php">Products</a></li>
