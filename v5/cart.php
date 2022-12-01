@@ -20,7 +20,7 @@
             <ul id="navbar">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="shop.php">Shop</a></li>
-                <li><a href="blog.php">My Account</a></li>
+                <li><a href="account.php">My account</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li id="lg-bag"><a href="#" class="active"><i class="far fa-shopping-bag"></i></a></li>
@@ -139,7 +139,7 @@
         </div>
 
         <div class="col">
-            <h4>My Account</h4>
+            <h4>My account</h4>
             <a href="login.php">Sign In</a>
             <a href="cart.php">View Cart</a>
         </div>
