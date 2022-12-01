@@ -181,7 +181,22 @@ $all_cart = $conn->query($sql_cart);
 
     </script>
 
+    <button onclick= "checkoutfunction()"> Checkout</button>
+    
     
 </body>
 
 </html>
+ function checkoutfunction() {
+    <?php  
+        echo '<script type="text/javascript">';
+        echo ' alert("You have Checked out successfully!")';  //not showing an alert box.
+        echo '</script>';
+    
+        $q = "TRUNCATE cart";
+        mysqli_multi_query($connection, $query);
+    ?>
+    sleep(3);
+    header("location : login.php");
+
+    }
