@@ -187,6 +187,7 @@ $all_cart = $conn->query($sql_cart);
 </body>
 
 </html>
+<script type="text/javascript">
  function checkoutfunction() {
     <?php  
         echo '<script type="text/javascript">';
@@ -200,3 +201,4 @@ $all_cart = $conn->query($sql_cart);
     header("location : login.php");
 
     }
+</script>
