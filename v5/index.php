@@ -29,17 +29,27 @@
             require "config.php";
 
             if(isset($_SESSION["user_id"])) {
-            echo "<li><a href=\"myAccount.php\"><img src =\"img/Profile.png\"></a></li>";
+                $id = $_SESSION["user_id"];
+                //$name = $_SESSION["user_firstname"];
+                $sql = "SELECT user_firstname FROM user WHERE user_id = '$id'";
+                $result = mysqli_query($conn,$sql);
+                $row = mysqli_fetch_assoc($result);
+                $name = $row['user_firstname'];
+               
+                
+            
+            
+                echo "<li><a href=\"myAccount.php\">$name</a></li>";
             echo "<li><a href=\"logout.php\">Logout</a></li>";
             } else {
-            echo "<li><a href=\"register.php\"><img src =\"img/Profile.png\"></a></li>";
+            echo "<li><a href=\"register.php\">Sign Up/In</a></li>";
             }
             ?>
             
             <li id="lg-bag"><a href="cart.php"><i class="far fa-shopping-bag"></i></a></li>
             
             
-            <a href="#" id="close"><i class="far fa-times"></i></a>
+            <a href="shop.php" id="close"><i class="far fa-times"></i></a>
         </ul>
     </div>
     <div id="mobile">
@@ -89,7 +99,7 @@
         <p>Welcome to Tech Heaven</p>
         <div class="pro-container">
             <div class="pro">
-                <img src="img/products/f1.jpg" alt="">
+            <a href="shop.php"><img src="img/products/f1.jpg" alt=""></a>
                 <div class="des">
                     <span>Android</span>
                     <h4>Razer Kishi for Android</h4>
@@ -102,10 +112,10 @@
                     </div>
                     <h4>£79 </h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/f2.jpg" alt="">
+                <a href="shop.php"><img src="img/products/f2.jpg" alt=""></a>
                 <div class="des">
                     <span>PC</span>
                     <h5>Logitech G29 Driving Force Gaming Steering Wheel - Playstation, PC</h5>
@@ -118,10 +128,10 @@
                     </div>
                     <h4>£299</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/f3.jpg" alt="">
+                <a href="shop.php"><img src="img/products/f3.jpg" alt=""></a>
                 <div class="des">
                     <span>PC, XBOX</span>
                     <h5>Razer Wolverine V2 - White - Wired Gaming Controller</h5>
@@ -134,10 +144,10 @@
                     </div>
                     <h4>£99</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/f4.jpg" alt="">
+                <a href="shop.php"><img src="img/products/f4.jpg" alt=""></a>
                 <div class="des">
                     <span>PC</span>
                     <h5>Thrustmaster T.16000M FCS FLIGHT PACK</h5>
@@ -150,10 +160,10 @@
                     </div>
                     <h4>£199</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/f5.jpg" alt="">
+                <a href="shop.php"><img src="img/products/f5.jpg" alt=""></a>
                 <div class="des">
                     <span>PC, PS4, XBOX</span>
                     <h5>TSS HANDBRAKE Sparco Mod</h5>
@@ -166,10 +176,10 @@
                     </div>
                     <h4>£329</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/f6.jpg" alt="">
+                <a href="shop.php"><img src="img/products/f6.jpg" alt=""></a>
                 <div class="des">
                     <span>PS5</span>
                     <h5>PS5 Controller - Emrald Green skin</h5>
@@ -182,10 +192,10 @@
                     </div>
                     <h4>£99</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/f7.jpg" alt="">
+                <a href="shop.php"><img src="img/products/f7.jpg" alt=""></a>
                 <div class="des">
                     <span>XBOX</span>
                     <h5>Xbox Wireless Controller - Mineral Camo Special Edition</h5>
@@ -198,10 +208,10 @@
                     </div>
                     <h4>£59</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/f8.jpg" alt="">
+                <a href="shop.php"><img src="img/products/f8.jpg" alt=""></a>
                 <div class="des">
                     <span>PS5</span>
                     <h5>Aim Orange Matt PS5 Controller</h5>
@@ -214,7 +224,7 @@
                     </div>
                     <h4>£99</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         </div>
     </section>
@@ -230,7 +240,7 @@
         <p>Exclusive Custom Designs</p>
         <div class="pro-container">
             <div class="pro">
-                <img src="img/products/n1.jpg" alt="">
+                <a href="shop.php"><img src="img/products/n1.jpg" alt=""></a>
                 <div class="des">
                     <span>PS5</span>
                     <h5>Yellow Green Fade - PS5 Controller</h5>
@@ -243,10 +253,10 @@
                     </div>
                     <h4>£99</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/n2.jpg" alt="">
+                <a href="shop.php"><img src="img/products/n2.jpg" alt=""></a>
                 <div class="des">
                     <span>XBOX</span>
                     <h5>Xbox Series X Custom Controller - Zombie Edition</h5>
@@ -259,10 +269,10 @@
                     </div>
                     <h4>£79</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/n3.jpg" alt="">
+                <a href="shop.php"><img src="img/products/n3.jpg" alt=""></a>
                 <div class="des">
                     <span>XBOX</span>
                     <h5>Turtle Beach Recon Controller - Black</h5>
@@ -275,10 +285,10 @@
                     </div>
                     <h4>£59</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/n4.jpg" alt="">
+                <a href="shop.php"><img src="img/products/n4.jpg" alt=""></a>
                 <div class="des">
                     <span>PS5</span>
                     <h5>Red Street Camo - PS5 Controller</h5>
@@ -291,10 +301,10 @@
                     </div>
                     <h4>£99</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/n5.jpg" alt="">
+                <a href="shop.php"><img src="img/products/n5.jpg" alt=""></a>
                 <div class="des">
                     <span>PS4</span>
                     <h5>Yellow pulse DR.AimKing edition - PS4 Controller</h5>
@@ -307,10 +317,10 @@
                     </div>
                     <h4>£69</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/n6.jpg" alt="">
+                <a href="shop.php"><img src="img/products/n6.jpg" alt=""></a>
                 <div class="des">
                     <span>adidas</span>
                     <h5>Moza racingsim FSR Steering wheel</h5>
@@ -323,10 +333,10 @@
                     </div>
                     <h4>£580</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/n7.jpg" alt="">
+                <a href="shop.php"><img src="img/products/n7.jpg" alt=""></a>
                 <div class="des">
                     <span>XBOX</span>
                     <h5>Ice and Fire Controller - Series S / X</h5>
@@ -339,10 +349,10 @@
                     </div>
                     <h4>£59</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
             <div class="pro">
-                <img src="img/products/n8.jpg" alt="">
+                <a href="shop.php"><img src="img/products/n8.jpg" alt=""></a>
                 <div class="des">
                     <span>PS5</span>
                     <h5>AimControllers RL9 Black / Red - Playstation</h5>
@@ -355,7 +365,7 @@
                     </div>
                     <h4>£219</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <a href="shop.php"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
         </div>
     </section>
