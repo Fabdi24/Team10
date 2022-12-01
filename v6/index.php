@@ -375,13 +375,12 @@
             <h4>crazy deals</h4>
             <h2>Free Shipping</h2>
             <span>All orders over £79 will include free next day shipping</span>
-            <button class="white">Learn More</button>
+            
         </div>
         <div class="banner-box banner-box2">
             <h4>Winter</h4>
             <h2>upcoming season</h2>
             <span>The best controller sale is on CTRLR.com</span>
-            <button class="white">Collection</button>
         </div>
     </section>
 
