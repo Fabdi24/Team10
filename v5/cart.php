@@ -159,18 +159,18 @@ $all_cart = $conn->query($sql_cart);
     <script>
         var checkout = document.getElementsByClassName("normal");
         
-            checkout.addEventListener("click", function(event) {
+            checkout.addEventListener("click",() => {
                 
               
                <?php
                 $query = "TRUNCATE TABLE cart";
                 mysqli_multi_query($conn, $query);
-                header(Location : "cart.php");
+                header('Location : myAccount.php');
                 ?>
                 alert("You have Checked out successfully!");
                 
 
-            })
+            }, {once : true });
         
 
 
