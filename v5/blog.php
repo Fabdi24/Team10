@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account - Sign up or Login</title>
+    <title>My account - Sign up or Login</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
     <link rel="stylesheet" href="style.css">
@@ -20,7 +20,7 @@
             <ul id="navbar">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="shop.php">Shop</a></li>
-                <li><a class="active" href="blog.php">My Account</a></li>
+                <li><a class="active" href="account.php">My account</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li id="lg-bag"><a href="cart.php"><i class="far fa-shopping-bag"></i></a></li>
@@ -33,7 +33,7 @@
         </div>
     </section>
 
-    <section id="page-header" class="blog-header">
+    <section id="page-header" class="account-header">
 
         <h2>#readmore</h2>
 
@@ -175,7 +175,7 @@
         </div>
 
         <div class="col">
-            <h4>My Account</h4>
+            <h4>My account</h4>
             <a href="login.php">Sign In</a>
             <a href="cart.php">View Cart</a>
         </div>
