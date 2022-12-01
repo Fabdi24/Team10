@@ -69,7 +69,7 @@
             <ul id="navbar">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="shop.php">Shop</a></li>
-            <li><a href="account.php">account</a></li>
+            <li><a href="myAccount.php">account</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
