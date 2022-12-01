@@ -165,7 +165,7 @@ $all_cart = $conn->query($sql_cart);
                <?php
                 $query = "TRUNCATE TABLE cart";
                 mysqli_multi_query($conn, $query);
-                header('Location : cart.php');
+                header('Location : myAccount.php');
                 ?>
                 alert("You have Checked out successfully!");
                 
