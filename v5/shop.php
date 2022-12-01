@@ -56,7 +56,7 @@
             <img <?php echo $row["image"]; ?>  alt="">
         </div>
         <div class ="caption">
-        <p class="product_name"> <?php echo $row["name"]?></p>
+        <p class="product_name" style="font-size: 15px"> <?php echo $row["name"]?></p>
         <p class="price">£<?php echo $row["price"]?></p> 
         </div>
         <button class="add" data-id="<?php echo $row["id"];  ?>">Add to cart</button>
