@@ -21,7 +21,7 @@
         <ul id="navbar">
             <li><a class="active" href="index.php">Home</a></li>
             <li><a href="shop.php">Shop</a></li>
-            <li><a href="blog.php">Blog</a></li>
+            <li><a href="account.php">account</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
             
@@ -29,7 +29,7 @@
             require "config.php";
 
             if(isset($_SESSION["user_id"])) {
-            echo "<li><a href=\"blog.php\"><img src =\"img/Profile.png\"></a></li>";
+            echo "<li><a href=\"account.php\"><img src =\"img/Profile.png\"></a></li>";
             echo "<li><a href=\"logout.php\">Logout</a></li>";
             } else {
             echo "<li><a href=\"register.php\"><img src =\"img/Profile.png\"></a></li>";
@@ -427,7 +427,7 @@
         </div>
 
         <div class="col">
-            <h4>My Account</h4>
+            <h4>My account</h4>
             <a href="login.php">Sign In</a>
             <a href="cart.php">View Cart</a>
         </div>

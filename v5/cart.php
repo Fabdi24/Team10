@@ -1,3 +1,17 @@
+<?php
+
+require_once "config.php";
+
+$sql_cart = "SELECT * FROM cart";
+$all_cart = $conn->query($sql_cart);
+
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,17 +24,18 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
 
-    <section id="header">
+<section id="header">
         <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
         <div>
             <ul id="navbar">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="shop.php">Shop</a></li>
-                <li><a href="blog.php">My Account</a></li>
+                <li><a href="account.php">My Account</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li id="lg-bag"><a href="#" class="active"><i class="far fa-shopping-bag"></i></a></li>
@@ -37,130 +52,136 @@
     <section id="page-header" class="about-header">
 
         <h2>#cart</h2>
-        <p>Add your coupon code & SAVE upto 70%!</p>
 
     </section>
 
-    <section id="cart" class="section-p1">
-        <table width="100%">
-            <thead>
-                <tr>
-                    <td>Remove</td>
-                    <td>Image</td>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Subtotal</td>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="img/products/f1.jpg" alt=""></td>
-                    <td>Logitech G29</td>
-                    <td>$118.19</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>$118.19</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="img/products/f2.jpg" alt=""></td>
-                    <td>Razer Wolverine V2 - White - Wired Gaming Controlle</td>
-                    <td>$118.19</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>$118.19</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="img/products/f3.jpg" alt=""></td>
-                    <td>Thrustmaster T.16000M FCS FLIGHT PACK</td>
-                    <td>$118.19</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>$118.19</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section id="cart-add" class="section-p1">
-        <div id="cuopon">
-            <h3>Apply Coupon</h3>
-            <div>
-                <input type="text" name="" id="" placeholder="Enter Your Coupon">
-                <button class="normal">Apply</button>
-            </div>
-        </div>
-
-        <div id="subtotal">
-            <h3>Cart Totals</h3>
-            <table>
-                <tr>
-                    <td>Cart Subtotal</td>
-                    <td>$ 335</td>
-                </tr>
-                <tr>
-                    <td>Shipping</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>$ 335</strong></td>
-                </tr>
-            </table>
-            <button class="normal">Proceed to checkout</button>
-        </div>
-    </section>
-
-
-    <footer class="section-p1">
-        <div class="col">
-            <img class="logo" src="img/logo.png" alt="">
-            <h4>Contact</h4>
-            <p><strong>Address: </strong> Aston University, Birmingham</p>
-            <p><strong>Phone:</strong> +44 1234567890</p>
-            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
-            <div class="follow">
-                <h4>Follow Us</h4>
-                <div class="icon">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                    <i class="fab fa-youtube"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <h4>About</h4>
-            <a href="about.php">About Us</a>
-            <a href="contact.php">Contact Us</a>
-        </div>
-
-        <div class="col">
-            <h4>My Account</h4>
-            <a href="login.php">Sign In</a>
-            <a href="cart.php">View Cart</a>
-        </div>
-
-        <div class="col install">
-            <h4>Install App</h4>
-            <p>From App Store or Google Play</p>
-            <div class="row">
-                <img src="img/pay/app.jpg" alt="">
-                <img src="img/pay/play.jpg" alt="">
-            </div>
-            <p>Secured Payment Gateways </p>
-            <img src="img/pay/pay.png" alt="">
-        </div>
-
+    <main>
         
-    </footer>
+        <?php
+      
+        
+        while($row_cart = mysqli_fetch_assoc($all_cart)){
+            $sql = "SELECT * FROM products WHERE id =".$row_cart["product_id"];
+            $total_products = $conn->query("$sql");
+            while($row = mysqli_fetch_assoc($total_products)){
+    
+        ?>
+        <div class="card">
+            <div class="image">
+            <img <?php echo $row["image"]; ?>  alt="">
+            </div>
+        <div class ="caption">
+            <p class="product_name"> <?php echo $row["name"]; ?></p>
+            <p class="price">£<?php echo $row["price"]; ?></p> 
+            <?php
+            $name = $row["name"];
+            $image = $row["image"];
+            $price = $row["price"];
+            $description = $row["description"];
+            $quantity = $row["quantity"];
+            $colour = $row["colour"];
+            $product_id = $row["id"];
+            
+           
+            
+            $id = $_SESSION["user_id"];
+            
+            
+            
+
+            $insert = "INSERT INTO orders (user_id, product_id, product_name, product_description, product_colour, product_price, product_image)
+            VALUES ('$id', '$product_id', '$name', '$description', '$colour', '$price', '$image')";
+            
+            $result3 = mysqli_query($conn, $insert);
+            ?>
+        </div>
+        <button class="remove" data-id="<?php echo $row["id"]; ?>">Remove from Cart</button>
+</div>    
+
+        <?php
+        }
+}
+        ?>
+    </main>
+
+    <script>
+        var remove = document.getElementsByClassName("remove");
+        for (var i = 0; i<remove.length; i++) {
+            remove[i].addEventListener("click", function(event) {
+                var target = event.target;
+                var cart_id = target.getAttribute("data-id");
+                
+                var xml = new XMLHttpRequest();
+                xml.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+
+                    }
+                }
+
+                xml.open("GET","config.php?cart_id="+cart_id,true);
+                xml.send();
+
+            })
+        }
+    header(Location: "cart2.php");
 
 
-    <script src="script.js"></script>
+    </script>
 
+    <div>
+    <?php
+    
+    if (isset($_POST['Submit'])) {
+
+    $cart = "SELECT * from cart";
+    echo "$cart";
+    $id = $_SESSION["user_id"];
+
+    $sql = "INSERT INTO orders (user_id, user_orders)
+    VALUES (`$id`, `$cart`)";
+
+    $result = mysqli_query($conn, $sql);
+
+    if ($result) {
+        echo("Success");
+    } else {
+        $sql = "UPDATE user SET orders = $cart WHERE user_id = $id";
+        $result2 = mysqli_query($conn, $sql);
+        if ($result2) {
+            echo("Success");
+    }
+}
+    }
+?>
+    <button class="normal" name="Submit">Checkout</button>
+   
+
+    <script>
+        var checkout = document.getElementsByClassName("normal");
+        for (var i = 0; i<remove.length; i++) {
+            remove[i].addEventListener("click", function(event) {
+                var target = event.target;
+                var cart_id = target.getAttribute("data-id");
+                
+                var xml = new XMLHttpRequest();
+                xml.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        
+                    }
+                }
+
+
+                xml.open("GET","config.php?cart_id="+cart_id,true);
+                xml.send();
+                
+
+            })
+        }
+
+
+    </script>
+
+    
 </body>
 
-</php>
+</html>
