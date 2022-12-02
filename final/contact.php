@@ -101,8 +101,9 @@
             <button class="normal">Submit</button>
         </form>
     </section>
-
-
+    <section id="newsletter" class="section-p1 section-m1">
+        <span></span>
+    </section>
     <footer class="section-p1">
         <div class="col">
             <img class="logo" src="img/logo.png" alt="">
