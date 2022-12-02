@@ -59,7 +59,7 @@
     </div>
 </section>
 
-    <section id="hero">
+    <section class="hero">
         <h4>Welcome to <b><h3>Ctrlr.com</h3></b> </h4>
         <h2>Winter Exclusive deals</h2>
         <h1>On all products</h1>
@@ -228,11 +228,7 @@
         </div>
     </section>
 
-    <section id="banner" class="section-m1">
-        <h4><u>WHY CTRLR.COM ?</u></h4>
-        <h2>Up to <span>40% Off</span> – All Controllers & Joystick</h2>
-        <button class="normal">Explore More</button>
-    </section>
+
 
     <section id="product1" class="section-p1">
         <h2>New Arrivals</h2>
@@ -369,20 +365,7 @@
         </div>
     </section>
 
-    <section id="sm-banner" class="section-p1">
-        <div class="banner-box">
-            <h4>crazy deals</h4>
-            <h2>Free Shipping</h2>
-            <span>All orders over £79 will include free next day shipping</span>
-            <button class="white">Learn More</button>
-        </div>
-        <div class="banner-box banner-box2">
-            <h4>Winter</h4>
-            <h2>upcoming season</h2>
-            <span>The best controller sale is on CTRLR.com</span>
-            <button class="white">Collection</button>
-        </div>
-    </section>
+
 
     <section id="banner3">
         <div class="banner-box">
@@ -400,14 +383,7 @@
     </section>
 
     <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign Up For Newsletters</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers.</span> </p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
-        </div>
+<span></span>
     </section>
 
     <footer class="section-p1">
