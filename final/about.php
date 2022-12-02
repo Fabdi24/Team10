@@ -56,17 +56,22 @@
 
         <h2>#KnowUs </h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur </p>
+        <p>We provide - You Play</p>
 
     </section>
 
     <section id="about-head" class="section-p1">
-        <img src="img/about/a6.jpg" alt="">
+        <img src="img/about/a7.jpg" alt="">
         <div>
             <h2>Who We Are?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis auteirure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>We're a growing company dedicated to enhance your gaming experience by providing you with quality controllers across various consoles.
+            We have an excellent reputation built upon years of committment to enhancing the gaming experience.
+            We are hoping to spread the interest of controllers to all gamers alike - giving you #CONTROL over your gaming.
 
+            We hope you can find a controller that will elevate your experience.
+
+            #LETS_PLAY
+            </p>
 
             <br><br>
 
@@ -74,7 +79,7 @@
     </section>
 
     <section id="about-app" class="section-p1">
-        <h1>Download Our <a href="#">App</a> </h1>
+        <h1>Perks of using our website:</h1>
         
     </section>
 
@@ -106,9 +111,7 @@
     </section>
 
     <section id="newsletter" class="section-p1 section-m1">
-<span>
-    
-</span>
+<span></span>
     </section>
 
     <footer class="section-p1">
@@ -130,8 +133,9 @@
             <a href="#">View Cart</a>
         </div>
 
-
-        
+        <div class="col">
+            <p>All products mentioned do not belong to us and are owned by the respective owners such as Sony, Microsoft, Moza etc.</p>
+        </div>
     </footer>    
 
 
