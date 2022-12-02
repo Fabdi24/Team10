@@ -30,9 +30,10 @@
         
         $result = mysqli_query($conn, $sql);
         
-        if ($result) {
+         if ($result) {
             echo("Success!");
             header("Location: login.php");
+            exit();
         }
            
         }else if ($password != $confirmPassword) {
@@ -56,13 +57,7 @@
 <body>
 
     <section id="header">
-        <div class="dropdown">
-            <button class="dropbutton">Mode</button>
-            <div class="dropdownMenu">
-                <button onclick="darkMode()">Darkmode</button>
-                <button onclick="lightMode()">LightMode</button>
-            </div>
-          </div>
+
         <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
 
         <div>
@@ -72,12 +67,9 @@
             
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
+            <li id="lg-bag"><a href="cart.php"><i class="far fa-shopping-bag"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
-        </div>
-        <div id="mobile">
-            <a href="cart.php"><i class="far fa-shopping-bag"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
 
@@ -118,20 +110,49 @@
 
 <p>By creating an account you agree to our <a>Terms & Conditions</a></p>
 
+<div>
+<h4> Already a user? <a class="des" href="login.php">Log in</a>  </h4>
+</div>
+
 <button type="submit" class="buttonregister" name="Submit" value="Register"> Register </button>
 
 
 </form>
 
-<p> Already a user? <a href="login.php">Log in</a>  </p>
-    </div>
-</div>
-<section id="adminFooter" class="section-p1 section-m1">
-    <div class="newstext">
-        <h4>Ctrlr.com</h4>
-    </div>
-</section>
+<section id="newsletter" class="section-p1 section-m1">
+<span>
     
+</span>
+</section>
+
+<footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Aston University, Aston triangle, Birmingham </p>
+            <p><strong>Phone:</strong> +44 2222 365 /(+44) 01 2345 6789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+        </div>
+
+
+        <div class="dropdown">
+            <button class="dropbutton">Mode</button>
+            <div class="dropdownMenu">
+                <button onclick="darkMode()">Darkmode</button>
+                <button onclick="lightMode()">LightMode</button>
+            </div>
+          </div>    
+    </footer>    
     <script src="script.js"></script>
 </body>
 
