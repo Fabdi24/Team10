@@ -62,7 +62,7 @@
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
-</body>
+
 
 
 <main>
@@ -147,7 +147,31 @@
 
 </script>
 
+<footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> Aston University, Birmingham</p>
+            <p><strong>Phone:</strong> +44 1234567890</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        </div>
 
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.php">About Us</a>
+            <a href="contact.php">Contact Us</a>
+        </div>
 
+        <div class="col">
+            <h4>My account</h4>
+            <a href="login.php">Sign In</a>
+            <a href="cart.php">View Cart</a>
+        </div>
 
+        <div class="col">
+            <p>All products mentioned do not belong to us and are owned by the respective owners such as Sony, Microsoft, Moza etc.</p>
+        </div>
+    </footer>
+
+<body>
 </html>
