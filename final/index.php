@@ -408,7 +408,7 @@
         </div>
 
         <div class="col">
-            <p>All products mentioned do not belong to us and are owned by the respective owners.</p>
+            <p>All products mentioned do not belong to us and are owned by the respective owners such as Sony, Microsoft, Moza etc.</p>
         </div>
     </footer>
 
