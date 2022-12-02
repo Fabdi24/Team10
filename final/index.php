@@ -317,8 +317,8 @@
             <div class="pro">
                 <a href="shop.php"><img src="img/products/n6.jpg" alt=""></a>
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Moza racingsim FSR Steering wheel</h5>
+                    <span>Android</span>
+                    <h5>Razer kishi for Android</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
