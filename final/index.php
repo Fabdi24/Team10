@@ -317,8 +317,8 @@
             <div class="pro">
                 <a href="shop.php"><img src="img/products/n6.jpg" alt=""></a>
                 <div class="des">
-                    <span>Android</span>
-                    <h5>Razer kishi for Android</h5>
+                    <span>Moza</span>
+                    <h5>Moza Racing Sim FSR Steering wheel</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -405,6 +405,10 @@
             <h4>My account</h4>
             <a href="login.php">Sign In</a>
             <a href="cart.php">View Cart</a>
+        </div>
+
+        <div class="col">
+            <p>All products mentioned do not belong to us and are owned by the respective owners.</p>
         </div>
     </footer>
 
