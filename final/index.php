@@ -64,7 +64,6 @@
         <h2>Winter Exclusive deals</h2>
         <h1>On all products</h1>
         <p>Up to 40% off selected controllers + Free shipping</p>
-        <button>Shop Now</button>
     </section>
 
     <section id="feature" class="section-p1">
